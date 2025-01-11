@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicines</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Medicines</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	<!-- Add this section inside the <body> tag, above the <main> tag -->
+	<input type="text" id="searchInput" placeholder="Search medicines..." onkeyup="filterMedicines()">
+
+
+    <main>
+        <h1>List of Medicines</h1>
+
+        <section class="medicines-list">
+            <ul>
+                <li>
+                    <h2>Paracetamol</h2>
+                    <p>Common pain reliever and fever reducer.</p>
+                </li>
+                <li>
+                    <h2>Aspirin</h2>
+                    <p>Used for pain, inflammation, and fever.</p>
+                </li>
+                <li>
+                    <h2>Ibuprofen</h2>
+                    <p>Nonsteroidal anti-inflammatory drug (NSAID).</p>
+                </li>
+                <li>
+                    <h2>Amoxicillin</h2>
+                    <p>Antibiotic for bacterial infections.</p>
+                </li>
+                <li>
+                    <h2>Losartan</h2>
+                    <p>Medication for high blood pressure.</p>
+                </li>
+                <!-- Add more medicine listings as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

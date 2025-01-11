@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medicine Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #3e8e41;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: block;
+            padding: 20px;
+        }
+
+        .medicine-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            height: 150px;
+            flex-wrap: wrap;
+            transition: transform 0.3s ease-in-out;
+            position: relative; /* Added for the hover effect */
+        }
+
+        .medicine-card img {
+            max-width: 150px;
+            height: 100px;
+            border-radius: 8px;
+            margin-right: 20px;
+            transition: transform 0.3s ease-in-out; /* Smooth transition for image zoom */
+        }
+
+        .medicine-card:hover img {
+            transform: scale(1.5); /* Enlarge the image on hover */
+        }
+
+        .medicine-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+            max-width: 350px;
+            padding-right: 20px;
+        }
+
+        .medicine-details h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        .medicine-details p {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .medicine-details .price {
+            font-size: 1.2rem;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #3e8e41;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Our Medicine Store</h1>
+    </header>
+
+    <div class="container">
+        <!-- Cough Syrup Card -->
+        <div class="medicine-card">
+            <img src="cough_syrup.PNG" alt="Cough Syrup">
+            <div class="medicine-details">
+                <h3>Cough Syrup</h3>
+                <p><strong>Composition:</strong> Dextromethorphan, Guaifenesin</p>
+                <p><strong>Usage:</strong> Relieves coughing and helps clear mucus.</p>
+                <p class="price">$12.99</p>
+            </div>
+        </div>
+
+        <!-- Vitamin Card -->
+        <div class="medicine-card">
+            <img src="vitamins_tab.PNG" alt="Vitamins">
+            <div class="medicine-details">
+                <h3>Vitamins</h3>
+                <p><strong>Composition:</strong> Vitamin C, Vitamin D, Vitamin E</p>
+                <p><strong>Usage:</strong> Supports immune system and overall wellness.</p>
+                <p class="price">$8.50</p>
+            </div>
+        </div>
+
+        <!-- Pain Reliever Card -->
+        <div class="medicine-card">
+            <img src="https://via.placeholder.com/150x150" alt="Pain Reliever">
+            <div class="medicine-details">
+                <h3>Pain Reliever</h3>
+                <p><strong>Composition:</strong> Acetaminophen, Caffeine</p>
+                <p><strong>Usage:</strong> Relieves minor aches and pains.</p>
+                <p class="price">$6.99</p>
+            </div>
+        </div>
+
+        <!-- Antiseptic Card -->
+        <div class="medicine-card">
+            <img src="https://via.placeholder.com/150x150" alt="Antiseptic">
+            <div class="medicine-details">
+                <h3>Antiseptic</h3>
+                <p><strong>Composition:</strong> Benzalkonium Chloride</p>
+                <p><strong>Usage:</strong> Prevents infection in minor cuts and wounds.</p>
+                <p class="price">$5.50</p>
+            </div>
+        </div>
+
+        <!-- Allergy Medicine Card -->
+        <div class="medicine-card">
+            <img src="https://via.placeholder.com/150x150" alt="Allergy Medicine">
+            <div class="medicine-details">
+                <h3>Allergy Medicine</h3>
+                <p><strong>Composition:</strong> Loratadine</p>
+                <p><strong>Usage:</strong> Provides relief from allergy symptoms like runny nose, sneezing, and itching.</p>
+                <p class="price">$9.99</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Medicine Store. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
